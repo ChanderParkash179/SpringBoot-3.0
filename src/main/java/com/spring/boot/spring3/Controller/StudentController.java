@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class StudentController {
 
-    private StudentService studentService;
+    private final StudentService studentService;
 
     @GetMapping("get/all/")
     public ResponseEntity<?> findAll() {
